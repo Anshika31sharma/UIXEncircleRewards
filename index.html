@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation Bar</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <nav class="encircle-navbar">
+      <div class="encircle-logo">
+        <img src="./Assets/logo.png" alt="Encirlce Logo" />
+      </div>
+      <ul class="encircle-menu">
+        <li class="encircle-menu-item"><a href="#">About Us</a></li>
+        <li class="encircle-menu-item"><a href="#">Shop</a></li>
+        <li class="encircle-menu-item"><a href="#">Refer & Earn</a></li>
+        <li class="encircle-menu-item"><a href="#">Contact Us</a></li>
+        <button class="encircle-signin-btn">SIGN IN / SIGN UP</button>
+      </ul>
+    </nav>
+    <ul class="gallery">
+      <li><img src="Assets/1slider.jpg" alt="Image 1" /></li>
+      <li><img src="Assets/2slider.jpg" alt="Image 2" /></li>
+      <li><img src="Assets/3slider.jpg" alt="Image 3" /></li>
+    </ul>
+    <div class="section3">
+      <div id="rewardProgram">
+        <h1>Our Encircle Reward Program</h1>
+        <p>
+          Providing the flexibility to earn rewards from 10+ products, top
+          brands, gift cards, experiences, and more.
+        </p>
+        <ul>
+          <li>TITAN +</li>
+          <li>TITANEYE +</li>
+          <li>Jung USA</li>
+          <li>TITAN EVE</li>
+        </ul>
+      </div>
+      <img class="frame" src="Assets/Frame.png" alt="Frame Image" />
+    </div>
+    <div class="encircle-program">
+      <h1 class="encircle-title">
+        Unleashing The Power Of Encircle Reward Program
+      </h1>
+      <div class="elite-section">
+        <div class="elite-type">
+          <h2 class="elite-type">All Members</h2>
+          <div
+            class="elite-type silver-elite"
+            id="silverElite"
+            onclick="showSilverInfo()"
+          >
+            <h2 class="silver">Silver Elite</h2>
+          </div>
+          <div
+            class="elite-type gold-elite"
+            id="goldElite"
+            onclick="showGoldInfo()"
+          >
+            <h2 class="gold">Gold Elite</h2>
+          </div>
+          <div class="elite-type">
+            <h2 class="platinum">Platinum Elite</h2>
+            <img
+              class="elite-image"
+              src="img/platinum.jpg"
+              id="platinum-image"
+              style="display: none"
+            />
+          </div>
+        </div>
+        <img class="elite-image" src="./Assets/silver.png" id="silver-image" />
+        <img
+          class="elite-image"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7ffvVt4PZOdvPByx9zWssYVP4GuoqXvf2Y5B4-mTbF7JFla3xP0fYZbZqFg2R8zaTmLs&usqp=CAU"
+          id="gold-image"
+          style="display: none"
+        />
+      </div>
+      <div class="buttons">
+        <button class="join-encircle">JOIN ENCIRCLE PROGRAM</button>
+      </div>
+    </div>
+    <h1 class="heading">Our Rewards Discover the Perks</h1>
+    <div class="row">
+      <p>Upto 20% off</p>
+      <p>Upto 30% off</p>
+      <p>Upto 50% off</p>
+      <p>60% and above</p>
+    </div>
+    <div class="card-container">
+      <img src="./Assets/Card1.png" />
+      <img src="./Assets/Card2.png" />
+      <img src="./Assets/Card3.png" />
+      <img src="./Assets/Card4.png" />
+    </div>
+    <div class="buttons2">
+      <button class="join-encircle">JOIN ENCIRCLE PROGRAM</button>
+    </div>
+    <img />
+    <h2 class="heading2">Steps of Enroll</h2>
+    <img class="img" src="./Assets/enroll.png" alt="Enroll" />
+    <div class="image-container">
+      <img src="./Assets/last.png" alt="Last Image" />
+      <button class="overlay-button">Sign in</button>
+      <button class="overlay-button2">Win your monthly reward</button>
+      <button class="overlay-button3">Grab the deal</button>
+    </div>
+    <h class="heading3">What People Say</h>
+    <div class="container">
+      <div class="card-carousel">
+        <div class="card" id="1">
+          <div class="image-container"></div>
+          <p>
+            1 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Sapiente, explicabo!
+          </p>
+        </div>
+        <div class="card" id="2">
+          <div class="image-container"></div>
+          <p>
+            2 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Sapiente, explicabo!
+          </p>
+        </div>
+        <div class="card" id="3">
+          <div class="image-container"></div>
+          <p>
+            3 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Sapiente, explicabo!
+          </p>
+        </div>
+        <div class="card" id="4">
+          <div class="image-container"></div>
+          <p>
+            4 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Sapiente, explicabo!
+          </p>
+        </div>
+        <div class="card" id="5">
+          <div class="image-container"></div>
+          <p>
+            5 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Sapiente, explicabo!
+          </p>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h class="heading4">Explore Stores near you</h>
+      <div class="dropdown-container">
+        <select class="dropdown" id="allStores">
+          <option value="">All Stores</option>
+          <option value="store1">Store 1</option>
+          <option value="store2">Store 2</option>
+          <!-- Add more stores as needed -->
+        </select>
+
+        <select class="dropdown" id="dubaiCompanies">
+          <option value="">Dubai</option>
+          <option value="company1">Company 1</option>
+          <option value="company2">Company 2</option>
+          <!-- Add more companies as needed -->
+        </select>
+      </div>
+    </div>
+    <img src="./Assets/end.png" />
+    <script src="./script.js"></script>
+  </body>
+</html>
