@@ -19,70 +19,48 @@
         <button class="encircle-signin-btn">SIGN IN / SIGN UP</button>
       </ul>
     </nav>
-    <ul class="gallery">
-      <li><img src="Assets/1slider.jpg" alt="Image 1" /></li>
-      <li><img src="Assets/2slider.jpg" alt="Image 2" /></li>
-      <li><img src="Assets/3slider.jpg" alt="Image 3" /></li>
-    </ul>
-    <div class="section3">
+    <div class="carousel">
+      <div class="slides">
+        <img src="./Assets/1slider.jpg" alt="Image 1" class="slide active">
+        <img src="./Assets/2slider.jpg" alt="Image 2" class="slide">
+        <img src="./Assets/3slider.jpg" alt="Image 3" class="slide">
+      </div>
+      <button class="prev" onclick="moveSlide(-1)">❮</button>
+      <button class="next" onclick="moveSlide(1)">❯</button>
+    </div>
+    
+
       <div id="rewardProgram">
         <h1>Our Encircle Reward Program</h1>
         <p>
           Providing the flexibility to earn rewards from 10+ products, top
           brands, gift cards, experiences, and more.
         </p>
-        <ul>
-          <li>TITAN +</li>
-          <li>TITANEYE +</li>
-          <li>Jung USA</li>
-          <li>TITAN EVE</li>
-        </ul>
       </div>
       <img class="frame" src="Assets/Frame.png" alt="Frame Image" />
-    </div>
+
     <div class="encircle-program">
-      <h1 class="encircle-title">
-        Unleashing The Power Of Encircle Reward Program
-      </h1>
       <div class="elite-section">
         <div class="elite-type">
           <h2 class="elite-type">All Members</h2>
-          <div
-            class="elite-type silver-elite"
-            id="silverElite"
-            onclick="showSilverInfo()"
-          >
+          <div class="elite-type silver-elite" id="silverElite" onclick="showSilverInfo()">
             <h2 class="silver">Silver Elite</h2>
           </div>
-          <div
-            class="elite-type gold-elite"
-            id="goldElite"
-            onclick="showGoldInfo()"
-          >
+          <div class="elite-type gold-elite" id="goldElite" onclick="showGoldInfo()">
             <h2 class="gold">Gold Elite</h2>
           </div>
           <div class="elite-type">
             <h2 class="platinum">Platinum Elite</h2>
-            <img
-              class="elite-image"
-              src="img/platinum.jpg"
-              id="platinum-image"
-              style="display: none"
-            />
+            <img class="elite-image" src="img/platinum.jpg" id="platinum-image" style="display: none"/>
           </div>
         </div>
-        <img class="elite-image" src="./Assets/silver.png" id="silver-image" />
-        <img
-          class="elite-image"
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7ffvVt4PZOdvPByx9zWssYVP4GuoqXvf2Y5B4-mTbF7JFla3xP0fYZbZqFg2R8zaTmLs&usqp=CAU"
-          id="gold-image"
-          style="display: none"
-        />
       </div>
-      <div class="buttons">
-        <button class="join-encircle">JOIN ENCIRCLE PROGRAM</button>
+      <div class="images">
+        <img class="elite-image" src="./Assets/silver.png" id="silver-image"/>
+        <img class="elite-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7ffvVt4PZOdvPByx9zWssYVP4GuoqXvf2Y5B4-mTbF7JFla3xP0fYZbZqFg2R8zaTmLs&usqp=CAU" id="gold-image" style="display: none"/>
       </div>
     </div>
+    
     <h1 class="heading">Our Rewards Discover the Perks</h1>
     <div class="row">
       <p>Upto 20% off</p>
@@ -166,7 +144,7 @@
         </select>
       </div>
     </div>
-    <img src="./Assets/end.png" />
+    <img  class= "image-width" src="./Assets/end.png" />
     <script src="./script.js"></script>
   </body>
 </html>
